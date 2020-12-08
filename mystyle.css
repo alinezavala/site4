@@ -1,0 +1,136 @@
+/* Fonts ***********************************/
+@font-face {
+font-family: jaemin;
+src: url(font/nana/Caveat-Regular.ttf);
+}
+
+@font-face {
+font-family: haechan;
+src: url(haechan/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+font-family: fullsun;
+src: url(fullsun/DancingScript-VariableFont_wght.ttf);
+}
+/********************************/
+
+body{
+display: flex;
+justify-content: center;
+background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #96F2F9   ;
+background-size: 110px 200px;
+background-repeat: repeat-x;
+  );
+}
+
+#container{
+position: relative;
+top: 101px;
+width: 500px;
+}
+
+#sunflower {
+Display: flex;
+Justify-content: center;
+margin-left: 150px;
+margin-bottom: 30px;
+height: 200px;
+width: 200px;
+}
+
+#content-box{
+  background: #FFF;
+  padding: 100px;
+  margin-bottom: 15px;
+}
+
+ul {
+  font-family: fullsun;
+  font-size: 18px;
+position: relative;
+margin-left: 70px;
+margin-bottom: 20px;
+list-style-type: none;
+padding: 0px;
+display: flex;
+justify-content: left;
+}
+
+a {
+position: relative;
+text-decoration: none;
+background: #FFF;
+padding: 15px;
+}
+
+a:hover{
+background: black;
+}
+
+h1 {
+  font-family: haechan;
+  position: middle;
+  font-size: 50px;
+}
+
+p1 {
+  font-family: jaemin;
+  position: middle;
+}
+
+h2 {
+  font-family: fullsun;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+#slider {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 10s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
